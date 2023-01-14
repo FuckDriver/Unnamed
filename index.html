@@ -1,88 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/09ee03a068.js" crossorigin="anonymous"></script>
+    <title>Unnamed server</title>
+    <meta name="description" content="Український ваніла+ майнкрафт сервер">
+    <meta name="theme-color" content="#5865F2">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
+
+    <meta property="og:title" content="Приєднуйтесь до нас!">
+    <meta property="og:site_name" content=" Unnamed server">
+    <meta property="og:url" content="https://kvad.net">
+    <meta property="og:description" content="Український ваніла+ майнкрафт сервер">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.discordapp.net/attachments/981849845184733224/1057109817229062274/fire.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="Unnamed server">
+    <meta name="twitter:title" content="Приєднуйтесь до нас!">
+    <meta name="twitter:description" content="Український ваніла+ майнкрафт сервер">
+    <meta name="twitter:image" content="https://media.discordapp.net/attachments/981849845184733224/1057109817229062274/fire.png">
     <style>
-        body {
-            font-family: Verdana, sans-serif;
-            background-color: #1A1B27;
-            color: #F9F9F9;
-            text-align: center;
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('Montserrat-VariableFont_wght.ttf') format("truetype-variations");
+            font-weight: 1 999;
+            font-display: swap;
         }
 
-        p {
-            color: #D0D0D8;
-            line-height: 30%;
+        html, body {
+            height: 100%;
+            font-family: 'Montserrat', 'Tahoma', sans-serif; 
             font-size: 16px;
+            font-weight: 300;
         }
 
-        a {
-            color: #D0D0D8;
-            font-size: 32px;
-            transition: all 300ms ease-in-out;
+        html {
+            background-color: #000000;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), no-repeat center url(iris-shaders-1.webp);
+            background-position: 50% 70%;
+            box-sizing: border-box;
+            background-size: cover;
         }
 
-        a:hover {
-            color: rgb(138, 154, 173);
-            transform: scale(110%);
+        body {
+            /* font-family: Verdana, sans-serif; */
+            /* background-color: #202129; */
+            backdrop-filter: blur(2.5px);
+            color: #FFFFFF;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height:  calc(100vh - 30px);
         }
 
         .content {
-            display: block;
-            border-radius: 20px;
-
-            margin: auto;
-            margin-top: 20vh;
-            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            gap: 50px;
             width: fit-content;
-            text-align: center;
+            height: fit-content;
+            /* backdrop-filter: blur(5px); */
+            border-radius: 10px;
         }
 
-        .logo {
-            margin: 0;
-            font-size: 48px;
+        .logo-text {
+            position: relative;
+            font-style: normal;
+            text-transform: uppercase;
             font-weight: 700;
-            /* line-height: 29px; */
-            text-align: center;
+            font-weight: bold;
+            font-size: 64px;
+            color: #FFFFFF;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+            margin: 0;
+            z-index: 1;
+            transition: all .5s;
         }
 
-        .type {
-            background: linear-gradient(121.93deg, #DB36A4 0%, #F7FF00 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
+        .logo-text:hover {
+            filter: blur(10px);
+            color: #bbbdc9;
         }
 
-        .body {
-            margin: 36px 0;
+        .logo-subcolor {
+            color: #505779;
+            margin-top: -45px;
+            z-index: -1;
         }
 
         .links {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
             padding: 0px;
-            gap: 24px;
+            gap: 20px;
+        }
+
+        a {
+            font-weight: 500;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+
+        .btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 24px;
+            gap: 8px;
+            font-weight: 400;
+
+            background: #5865F2;
+            border-radius: 12px;
+
+            text-decoration: none;
+            transition: all .2s;
+        }
+
+        .btn:hover {
+            filter: brightness(70%);
+            transform: translate(2px, -2px);
+        }
+
+        .btn-wiki {
+            background-color: unset; 
+            border: 1px solid #FFFFFF; 
+            border-radius: 12px;
+        }
+
+        footer {
+            height: 30px;
+            color: #b8b8b9;
+            font-size: 12px;
+            margin: auto;
+            font-weight: 400;
+        }
+
+        footer > p {
+            display: inline-block;
+            background: linear-gradient(90.21deg, #00F260 27.5%, #0575E6 74.45%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin: auto;
         }
     </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF55LNPTWY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'G-WF55LNPTWY');
+    </script>
 </head>
 <body>
-    <div class="content">
-        <h1 class="logo type">Kubarnya</h1>
-        <div class="body">
-            <p>Cезон завершено 21.08.22</p>
-            <p>Триває розробка наступного</p>
-        </div>
-        <div class="links">
-            <a href="https://discord.gg/379nxjvdeZ" target="_blank"><i class="fa-brands fa-discord"></i></a>
-            <a href="https://t.me/Kubarnya" target="_blank"><i class="fa-solid fa-paper-plane"></i></a>
+    <div class="container">
+        <div class="content">
+            <!-- <img id="logo" src="./fire.png" alt="Unnamed"> -->
+            <div class="logo">
+                <h1 class="logo-text">Unnamed</h1>
+                <h1 class="logo-text logo-subcolor">Server</h1>
+            </div>
+            <!-- <div class="body">
+                Приватний український ваніла+ сервер. Не підтримується, не рекламується та не належить Kvadratnyk. Є спільним проєктом розробників серверу.
+            </div> -->
+            <div class="links">
+                <a class="btn" href="https://ds.kvad.net" target="_blank">
+                    <img src="discord.svg" height="24px" width="24px" alt="Discord">
+                    <span>Discord</span>
+                </a>
+                <a class="btn btn-wiki" href="https://unnamedserver.notion.site/UNNAMED-WIKI-d8ba278121c44d219718e900cc34f2d4" target="_blank">
+                    <span>Наша Wiki</span>
+                </a>
+            </div>
         </div>
     </div>
+    <footer>
+        2022 - 2023  &nbsp; By <p>FibeTeam</p> with &lt;3
+    </footer>
 </body>
+<script src="https://cdn.rawgit.com/scottschiller/Snowstorm/master/snowstorm-min.js"></script>
+<script>
+    snowStorm.autoStart = true;         
+    snowStorm.excludeMobile = true;      
+    snowStorm.flakesMax = 16;
+    snowStorm.flakesMaxActive = 16;      
+    snowStorm.animationInterval = 50;    
+    snowStorm.useGPU = true;             
+    snowStorm.flakeBottom = null;        
+    snowStorm.followMouse = false;       
+    snowStorm.snowColor = '#fff';        
+    snowStorm.snowCharacter = '&#8729';
+    snowStorm.className = 'snow';
+
+    snowStorm.freezeOnBlur = true;       
+    snowStorm.vMaxX = 1;                 
+    snowStorm.vMaxY = 3;                 
+    snowStorm.zIndex = 0;
+</script>
 </html>
